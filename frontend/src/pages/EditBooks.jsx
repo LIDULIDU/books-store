@@ -17,7 +17,7 @@ const EditBooks = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get(`http://localhost:5555/books/${id}`)
+      .get(`https://books-str-backend-j7y8t4uyh-lidulidus-projects.vercel.app/books/${id}`)
       .then((res) => {
         setAuthor(res.data.author);
         setPublishyear(res.data.publishyear);
@@ -43,7 +43,7 @@ const EditBooks = () => {
     setLoading(true);
 
     axios
-      .put(`http://localhost:5555/books/${id}`, data)
+      .put(`https://books-str-backend-j7y8t4uyh-lidulidus-projects.vercel.app/books/${id}`, data)
       .then((res) => {
 
         setLoading(false);

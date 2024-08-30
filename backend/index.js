@@ -23,7 +23,7 @@ app.use('/books', booksRoute);
 // 2nd way
 app.use(
     cors({
-        origin:"http://localhost:5555",
+        origin:"https://books-str-backend-j7y8t4uyh-lidulidus-projects.vercel.app/",
         methods:['GET','POST','PUT','DELETE'],
         allowedHeaders:['Content-Type'],
     })
